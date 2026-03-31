@@ -5,12 +5,13 @@ import string
 import random
 import re
 from models import init_db
-
+import os
 app = Flask(__name__)
 CORS(app)
 
 DB_NAME = "database.db"
-BASE_URL = "http://127.0.0.1:5000"
+
+BASE_URL = os.environ.get("BASE_URL", "http://127.0.0.1:5000")
 
 init_db()
 
