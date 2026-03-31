@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>Smart URL Shortener</h1>
+
+    <div class="form">
+      <input type="text" id="urlInput" placeholder="Enter a valid URL...">
+      <button onclick="shortenUrl()">Shorten</button>
+    </div>
+
+    <p id="message"></p>
+
+    <h2>Dashboard</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Original</th>
+          <th>Short</th>
+          <th>Clicks</th>
+          <th>Date</th>
+          <th>Copy</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
